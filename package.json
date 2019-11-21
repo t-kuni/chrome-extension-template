@@ -4,7 +4,8 @@
   "description": "This repository is skeleton of chrome extension.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "dev": "webpack --config webpack.config.js --mode development",
+    "watch": "webpack --config webpack.config.js --watch --mode development"
   },
   "repository": {
     "type": "git",

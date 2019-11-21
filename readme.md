@@ -10,7 +10,8 @@ git clone --depth 1 ssh://git@github.com/t-kuni/chrome-extension-skeleton [Proje
 cd [ProjectName]
 rm -rf .git 
 npm install
-npm run build
+npm run dev
+# or `npm run watch`
 ```
 
 # Enable extension for testing
@@ -23,4 +24,8 @@ chrome://extensions
 
 2.Load this folder from `load unpacked` button.
 
-3.Make sure to be shown button of this extension in extension bar of top right of window. 
+3.Make sure to be shown button of this extension in extension bar of top right of window.
+
+# Release build
+
+ 
