@@ -1,3 +1,5 @@
+import $ from 'jquery';
+
 function getCurrentTabUrl(callback) {
   // Query filter to be passed to chrome.tabs.query - see
   // https://developer.chrome.com/extensions/tabs#method-query
@@ -38,7 +40,7 @@ function getCurrentTabUrl(callback) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-	
+
 	getCurrentTabUrl((url) => {
 		const $textarea = $('#text-area');
 		const $button = $('#hello-button');

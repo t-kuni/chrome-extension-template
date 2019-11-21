@@ -4,7 +4,8 @@
   "description": "This repository is skeleton of chrome extension.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "dev": "webpack --config webpack.config.js --mode development",
+    "watch": "webpack --config webpack.config.js --watch --mode development"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   "homepage": "https://github.com/t-kuni/chrome-extension-skeleton#readme",
   "dependencies": {},
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.5",
+    "jquery": "^3.4.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
