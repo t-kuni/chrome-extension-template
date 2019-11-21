@@ -9,6 +9,8 @@ This repository is skeleton of chrome extension.
 git clone --depth 1 ssh://git@github.com/t-kuni/chrome-extension-skeleton [ProjectName]
 cd [ProjectName]
 rm -rf .git 
+npm install
+npm run build
 ```
 
 # Enable extension for testing

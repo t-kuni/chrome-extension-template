@@ -18,6 +18,8 @@
   "homepage": "https://github.com/t-kuni/chrome-extension-skeleton#readme",
   "dependencies": {},
   "devDependencies": {
+    "copy-webpack-plugin": "^5.0.5",
+    "jquery": "^3.4.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
