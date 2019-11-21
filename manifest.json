@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "chrome-extension-skeleton",
+  "short_name": "chrome-extension-skeleton",
+  "description": "chrome-extension-skeleton",
+  "version": "0.1",
+  "author": "my-name",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+	{
+      "matches": ["https://www.google.com/"],
+      "js": ["jquery-3.3.1.min.js", "content_script.js"],
+	  "run_at": "document_start"
+	}
+  ],
+  "permissions": [
+  ]
+}
