@@ -40,7 +40,23 @@ function getCurrentTabUrl(callback) {
 document.addEventListener('DOMContentLoaded', () => {
 	
 	getCurrentTabUrl((url) => {
-		const $textarea = $('.text-area');
+		const $textarea = $('#text-area');
+		const $button = $('#hello-button');
+
 		$textarea.text('Hello world from Javascript');
+		$button.click(onClickHelloWorld);
 	});
 });
+
+function onClickHelloWorld()
+{
+    const request = {
+        msg: 'hello world',
+    };
+
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, request, function(response) {
+            alert(response);
+        })
+    })
+}
