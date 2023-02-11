@@ -3,9 +3,9 @@ const fs = require('fs');
 const baseManifest = {
   "manifest_version": 2,
 
-  "name": "chrome-extension-skeleton",
-  "short_name": "chrome-extension-skeleton",
-  "description": "chrome-extension-skeleton",
+  "name": "chrome-extension-template",
+  "short_name": "chrome-extension-template",
+  "description": "chrome-extension-template",
   "version": "0.1",
   "author": "my-name",
 
